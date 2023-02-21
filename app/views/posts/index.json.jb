@@ -1,0 +1,8 @@
+@posts.map do |post|
+{
+  id: post.id,
+  name: post.name,
+  body: post.body,
+  image: post.image,
+}
+end
