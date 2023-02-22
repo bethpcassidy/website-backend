@@ -1,13 +1,14 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
-    render :index
+    render json: @posts
+    # render :index
   end
 
   def show
     @posts = Post.find_by(id: params[:id])
-
-    render :show
+    render json: @posts
+    # render :show
   end
 
   def create
@@ -16,7 +17,7 @@ class PostsController < ApplicationController
       body: params[:post][:body],
       image: params[:post][:image],
     )
-    redirect_to "/photos"
+    redirect_to "/posts"
   end
 
   def edit
