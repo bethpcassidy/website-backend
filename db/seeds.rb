@@ -7,3 +7,4 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 # Post.create(name: "First Post", body: "body", image: "image")
+# Post.create(name: "Second Post", body: "body", image: "image")

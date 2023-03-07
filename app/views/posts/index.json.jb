@@ -3,6 +3,6 @@
   id: post.id,
   name: post.name,
   body: post.body,
-  image: post.image,
+  image: post.image
 }
 end
